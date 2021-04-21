@@ -25,6 +25,20 @@ namespace BookStore
             {
                 app.UseDeveloperExceptionPage();
             }
+            // we use this below mentioned method for create a middle ware
+            app.Use(async (context, next) =>
+            {
+                await context.Response.WriteAsync("Hello from my first middleware");
+
+                await next(); //this next method transfer control to next method for compile it
+            });
+
+            app.Use(async (context, next) =>
+                {
+                await context.Response.WriteAsync("Hi this is second middle walre");
+                    await next();
+                });
+                
 
             app.UseRouting();
 
@@ -35,6 +49,15 @@ namespace BookStore
                     await context.Response.WriteAsync("Hello Usama!");
                 });
             });
+
+            app.UseEndpoints(endpoints =>
+            {
+                endpoints.Map("/ahmad", async context =>
+                {
+                    await context.Response.WriteAsync("Ahmad is here");
+                });
+            });
+                
         }
     }
 }
