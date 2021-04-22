@@ -11,7 +11,7 @@ namespace BookStore.Properties.Controllers
     {
         public string Index()
         {
-            return "first method from controler class";
+            return "first method from controler class"; 
         }
     }
 }

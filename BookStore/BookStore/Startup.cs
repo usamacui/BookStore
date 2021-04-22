@@ -22,7 +22,7 @@ namespace BookStore
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
-            if (env.IsDevelopment())
+            if (env.IsDevelopment())                      //enviournment variable
             {
                 app.UseDeveloperExceptionPage();
             }
@@ -40,6 +40,7 @@ namespace BookStore
             //        await next();
             //    });
                 
+            //----------------------------------------------------------------------------------------------------------------------------
 
             app.UseRouting();
 
@@ -56,14 +57,14 @@ namespace BookStore
                 endpoints.MapDefaultControllerRoute();
             });
 
-            app.UseEndpoints(endpoints =>
-            {
-                endpoints.Map("/ahmad", async context =>
-                {
-                    await context.Response.WriteAsync("Ahmad is here");
-                });
-            });
+            //app.UseEndpoints(endpoints =>
+            //{
+            //    endpoints.Map("/ahmad", async context =>
+            //    {
+            //        await context.Response.WriteAsync("Ahmad is here");
+            //    });
+            //});
                 
-        }
+        } 
     }
 }
