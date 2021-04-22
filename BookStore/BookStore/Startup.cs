@@ -16,6 +16,7 @@ namespace BookStore
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddControllersWithViews(); // we have add this method for add controler class and for view
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -25,29 +26,34 @@ namespace BookStore
             {
                 app.UseDeveloperExceptionPage();
             }
-            // we use this below mentioned method for create a middle ware
-            app.Use(async (context, next) =>
-            {
-                await context.Response.WriteAsync("Hello from my first middleware");
+            //// we use this below mentioned method for create a middle ware
+            //app.Use(async (context, next) =>
+            //{
+            //    await context.Response.WriteAsync("Hello from my first middleware");
 
-                await next(); //this next method transfer control to next method for compile it
-            });
+            //    await next(); //this next method transfer control to next method for compile it
+            //});
 
-            app.Use(async (context, next) =>
-                {
-                await context.Response.WriteAsync("Hi this is second middle walre");
-                    await next();
-                });
+            //app.Use(async (context, next) =>
+            //    {
+            //    await context.Response.WriteAsync("Hi this is second middle walre");
+            //        await next();
+            //    });
                 
 
             app.UseRouting();
 
+            //app.UseEndpoints(endpoints =>
+            //{
+            //    endpoints.MapGet("/", async context =>
+            //    {
+            //        await context.Response.WriteAsync(env.EnvironmentName);
+            //    });
+            //});
+
             app.UseEndpoints(endpoints =>
             {
-                endpoints.MapGet("/", async context =>
-                {
-                    await context.Response.WriteAsync("Hello Usama!");
-                });
+                endpoints.MapDefaultControllerRoute();
             });
 
             app.UseEndpoints(endpoints =>
