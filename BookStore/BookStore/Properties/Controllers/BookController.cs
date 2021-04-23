@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using BookStore.Models;
+using BookStore.Properties.Repository;
+using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,25 +10,53 @@ namespace BookStore.Properties.Controllers
 {
     public class BookController : Controller
     {
-    //    public IActionResult Index()
-    //    {                                     //default index
-    //        return View();
-    //    }
+        //    public IActionResult Index()
+        //    {                                     //default index
+        //        return View();
+        //    }
 
-   public string GetALLBooks()
+        private readonly BookRepository _bookRepository = null;
+        private object _BookRepository;
+
+        public BookController()
         {
-            return "All Book";
+            _bookRepository = new BookRepository();
+
         }
 
-        public string GetBook(int id)
+        public List<BookModel> GetallBooks()
         {
-            return $"book with id = {id}";
+            return _bookRepository.GetAllBooks();
         }
+
+        public BookModel GetBook(int id)
+        {
+
+            return _bookRepository.GetBookById(id);
+
+        }
+
+        public List<BookModel> SearchBooks(string bookName, string authorName)
+        {
+            return _bookRepository.SearchBook(bookName, authorName);
+        }
+
+
+         
+   //public string GetALLBooks()
+   //     {
+   //         return "All Book";
+   //     }
+
+        //public string GetBook(int id)
+        //{
+        //    return $"book with id = {id}";
+        //}
     
-        public string SearchBooks(string bookName, string authorName) //how pass parameter in controler action method herehttps://localhost:44337/book/searchbooks?bookName=Quran&authorName=ALLAH
-        {
-            return $"Book with name = {bookName} & authorName = { authorName}";
+      //  public string SearchBooks(string bookName, string authorName) //how pass parameter in controler action method herehttps://localhost:44337/book/searchbooks?bookName=Quran&authorName=ALLAH
+        //{
+        //    return $"Book with name = {bookName} & authorName = { authorName}";
 
-        }
+        //}
     }
 }
