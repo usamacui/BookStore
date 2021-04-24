@@ -35,7 +35,7 @@ namespace BookStore.Properties.Controllers
             return _bookRepository.GetBookById(id);
 
         }
-
+        //query for search books by id and Namehttps://localhost:44337/book/searchbooks?bookName=mvc&authorName=Usama
         public List<BookModel> SearchBooks(string bookName, string authorName)
         {
             return _bookRepository.SearchBook(bookName, authorName);

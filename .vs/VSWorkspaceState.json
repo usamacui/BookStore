@@ -1,0 +1,13 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\BookStore",
+    "\\BookStore\\BookStore",
+    "\\BookStore\\BookStore\\Models",
+    "\\BookStore\\BookStore\\Properties",
+    "\\BookStore\\BookStore\\Properties\\Controllers",
+    "\\BookStore\\BookStore\\Properties\\Repository"
+  ],
+  "SelectedNode": "\\BookStore\\BookStore\\Properties\\Controllers\\BookController.cs",
+  "PreviewInSolutionExplorer": false
+}
