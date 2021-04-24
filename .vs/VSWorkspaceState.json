@@ -6,8 +6,9 @@
     "\\BookStore\\BookStore\\Models",
     "\\BookStore\\BookStore\\Properties",
     "\\BookStore\\BookStore\\Properties\\Controllers",
-    "\\BookStore\\BookStore\\Properties\\Repository"
+    "\\BookStore\\BookStore\\Properties\\Repository",
+    "\\BookStore\\BookStore\\Views"
   ],
-  "SelectedNode": "\\BookStore\\BookStore\\Properties\\Controllers\\BookController.cs",
+  "SelectedNode": "\\BookStore\\BookStore\\Startup.cs",
   "PreviewInSolutionExplorer": false
 }

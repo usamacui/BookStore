@@ -24,9 +24,14 @@ namespace BookStore.Properties.Controllers
 
         }
 
-        public List<BookModel> GetallBooks()
+        //public List<BookModel> GetallBooks()
+        //{
+        //    return _bookRepository.GetAllBooks();
+        //}
+        public ViewResult GetallBooks()
         {
-            return _bookRepository.GetAllBooks();
+            var data = _bookRepository.GetAllBooks();
+            return View();
         }
 
         public BookModel GetBook(int id)

@@ -9,9 +9,20 @@ namespace BookStore.Properties.Controllers
     public class HomeController : Controller
 
     {
-        public string Index()
+        //index method is used for load and view default msg or data 
+        //public string Index()
+        //{
+        //    return "first method from home controler class"; 
+        //}
+
+        public ViewResult Index()
         {
-            return "first method from controler class"; 
+            return View();
+        }
+
+        public ViewResult AboutUs ()
+        {
+            return View();
         }
     }
 }
