@@ -2,9 +2,11 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.FileProviders;
 using Microsoft.Extensions.Hosting;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -12,6 +14,8 @@ namespace BookStore
 {
     public class Startup
     {
+        private object path;
+
         // This method gets called by the runtime. Use this method to add services to the container.
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
@@ -26,6 +30,9 @@ namespace BookStore
             {
                 app.UseDeveloperExceptionPage();
             }
+
+
+
             //// we use this below mentioned method for create a middle ware
             //app.Use(async (context, next) =>
             //{
@@ -39,6 +46,13 @@ namespace BookStore
             //    await context.Response.WriteAsync("Hi this is second middle walre");
             //        await next();
             //    });
+
+            app.UseStaticFiles();  //this method is use for useing static files e.g images css or js  from root location
+            //app.UseStaticFiles(new StaticFileOptions() //and this metod is use for useing static files from other locations or isay use krny ka lea 1 folder create krna ho ga "MyStaticFiles" ka name sy
+            //{
+            //    FileProvider = new PhysicalFileProvider(Path.Combine(Directory.GetCurrentDirectory() + "MyStaticFiles")),
+            //    RequestPath ="./MyStaticFiles"
+            //});
                 
             //----------------------------------------------------------------------------------------------------------------------------
 

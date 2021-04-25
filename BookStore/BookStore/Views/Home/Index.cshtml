@@ -5,11 +5,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-
+    <link href="~/css/Site.css" rel="stylesheet" />
+    <link href="~/lib/twitter-bootstrap/css/bootstrap.css" rel="stylesheet" />
 </head>
-<body>
-    <h1>  Welcome to Book Store</h1>
+<body class="container">
+
+    <img src="~/images/logo.jpg" calss="logo" alt="logo"/>
+
+    <input type="button" value="Click Me" class="btn-dark" />
+    <h1 class="h1">  Welcome to Book Store</h1>
     <p> is the home page of our Book Staore</p>
 </body>
+<script src="~/lib/jquery/jquery.js"></script>
 </html>
 
+
+<script>
+    $(document).ready(function () {
+        alert("PAge loaded");
+    });
+</script>
