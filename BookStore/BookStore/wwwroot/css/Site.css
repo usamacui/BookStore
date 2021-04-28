@@ -10,3 +10,38 @@
     background: none;
 
 }
+
+.box-shadow{
+    box-shadow: 0 .25rem .75rem rgba(0,0,0, .05);
+    
+}
+
+
+button.accept-policy {
+    font-size: 1rem;
+    line-height: inherit;
+}
+
+/* sticky footer Style*/
+
+html{
+    position: relative;
+    min-height: 100%;
+}
+
+body{
+    /* Margin by bottom of footer height*/
+    margin-bottom:100%;
+}
+
+
+.footer {
+    position:absolute;
+    bottom:0;
+    width: 100%;
+    white-space: nowrap;
+    line-height: 60px; /* Verticall center the text there*/
+}
+.membership-img {
+    width: 80%;
+}
