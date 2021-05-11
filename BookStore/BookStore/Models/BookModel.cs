@@ -15,5 +15,10 @@ namespace BookStore.Models
 
         public string description{get; set;}
 
+        public string Category { get; set; }
+        public string Language { get; set; }
+        public int ToatalPages { get; set; }
+
+
     }
 }

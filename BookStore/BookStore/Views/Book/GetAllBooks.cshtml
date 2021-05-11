@@ -9,8 +9,7 @@
 <div class="container">
     <div class="row">
 
-
-
+         
         @foreach (var book in Model)
         {
             <div class="col-md-4">
@@ -22,7 +21,7 @@
                         <p class="card">@book.description </p>
                         <div class="d-flex justif-content-between  align-items-center">
                             <div class="btn-group">
-                                <a href="#" class="btn btn-sm btn-outline-danger-secondery">View details</a>
+                                <a href= "/book/getbook/@book.Id" class="btn btn-sm btn-outline-danger-secondery">View details</a>
                             </div>
                             <small class=" text-muted">@book.Author</small>
                         </div>

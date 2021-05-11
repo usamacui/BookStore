@@ -34,11 +34,11 @@ namespace BookStore.Properties.Repository
             {
             return new List<BookModel>()
             {
-            new BookModel() {Id =1, Title="MVC", Author= "Ali", description="THis is description for MVC book"},
-            new BookModel() {Id =2, Title="C", Author= "Usama", description="THis is description for C book"},
-            new BookModel() {Id =3, Title="Java", Author= "Usama", description="THis is description for Java book" },
-            new BookModel() {Id =4, Title="Algorithm", Author= "khan", description="THis is description for Algorithm book" },
-            new BookModel() {Id =5, Title="Android", Author= "Safi", description="THis is description for Android book" },
+            new BookModel() {Id =1, Title="MVC", Author= "Ali", description="THis is description for MVC book", Category="MVC", Language="English", ToatalPages=234},
+            new BookModel() {Id =2, Title="C", Author= "Usama", description="THis is description for C book", Category="C", Language="Urdu", ToatalPages=134},
+            new BookModel() {Id =3, Title="Java", Author= "Usama", description="THis is description for Java book", Category="Programming", Language="Spanish", ToatalPages=139 },
+            new BookModel() {Id =4, Title="Algorithm", Author= "khan", description="THis is description for Algorithm book", Category="Programming", Language="Chines", ToatalPages=299 },
+            new BookModel() {Id =5, Title="Android", Author= "Safi", description="THis is description for Android book", Category="Programming", Language="Udu", ToatalPages=334 },
             
 
             };

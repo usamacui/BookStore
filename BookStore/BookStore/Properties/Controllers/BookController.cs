@@ -34,11 +34,17 @@ namespace BookStore.Properties.Controllers
             return View(data);
         }
 
-        public BookModel GetBook(int id)
+        //public BookModel GetBook(int id)
+       // {
+
+         //   return _bookRepository.GetBookById(id);
+            
+    //}
+    public ViewResult GetBook(int id)
         {
 
-            return _bookRepository.GetBookById(id);
-
+            var data =  _bookRepository.GetBookById(id);
+            return View(data);
         }
         //query for search books by id and Namehttps://localhost:44337/book/searchbooks?bookName=mvc&authorName=Usama
         public List<BookModel> SearchBooks(string bookName, string authorName)

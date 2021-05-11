@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "zd6BKVD2cf2dw4d5puhNjC3S935t5nXYQIMcURue5RTfJxrjRBm+W5pU97Df4D+/eqG1RpNyXzAh00+zbgE/Sg==",
+  "dgSpecHash": "dgeiGxJRfS/P6sfXhSXCD79zjPB8hmM9nBujcJzUNMSwlOiNv09mh6inozxjk5JmOcULJ9KkW8Xn6imtKiOq5w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\it2\\Desktop\\BookStore\\27-Apr-2021\\usamacui\\BookStore\\BookStore\\BookStore\\BookStore.csproj",
+  "projectFilePath": "C:\\Users\\it2\\Desktop\\BookStore\\05-May-2021\\BookStore\\BookStore\\BookStore\\BookStore.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\it2\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\it2\\.nuget\\packages\\microsoft.aspnetcore.mvc.razor.extensions\\3.1.14\\microsoft.aspnetcore.mvc.razor.extensions.3.1.14.nupkg.sha512",
