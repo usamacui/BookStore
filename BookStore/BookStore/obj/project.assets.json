@@ -6199,19 +6199,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\it2\\.nuget\\packages\\": {}
+    "C:\\Users\\Usama Ahmad\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\it2\\Desktop\\BookStore\\05-May-2021\\BookStore\\BookStore\\BookStore\\BookStore.csproj",
+      "projectUniqueName": "C:\\Users\\Usama Ahmad\\Desktop\\BookStore1\\11-May-2021\\BookStore\\BookStore\\BookStore\\BookStore.csproj",
       "projectName": "BookStore",
-      "projectPath": "C:\\Users\\it2\\Desktop\\BookStore\\05-May-2021\\BookStore\\BookStore\\BookStore\\BookStore.csproj",
-      "packagesPath": "C:\\Users\\it2\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\it2\\Desktop\\BookStore\\05-May-2021\\BookStore\\BookStore\\BookStore\\obj\\",
+      "projectPath": "C:\\Users\\Usama Ahmad\\Desktop\\BookStore1\\11-May-2021\\BookStore\\BookStore\\BookStore\\BookStore.csproj",
+      "packagesPath": "C:\\Users\\Usama Ahmad\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Usama Ahmad\\Desktop\\BookStore1\\11-May-2021\\BookStore\\BookStore\\BookStore\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\it2\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Usama Ahmad\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

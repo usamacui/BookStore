@@ -1,11 +1,8 @@
 {
   "ExpandedNodes": [
     "",
-    "\\BookStore",
-    "\\BookStore\\BookStore",
-    "\\BookStore\\BookStore\\Views",
-    "\\BookStore\\BookStore\\Views\\Home"
+    "\\BookStore"
   ],
-  "SelectedNode": "\\BookStore\\BookStore\\Views\\Home\\Index.cshtml",
+  "SelectedNode": "\\BookStore\\BookStore.sln",
   "PreviewInSolutionExplorer": false
 }
