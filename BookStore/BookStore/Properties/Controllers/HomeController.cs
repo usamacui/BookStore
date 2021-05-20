@@ -8,7 +8,12 @@ namespace BookStore.Properties.Controllers
 {
     public class HomeController : Controller
 
+        
     {
+        [ViewData]
+        public string CustomProperty { get; set; }
+        [ViewData]
+        public string Title { get; set; }
         //index method is used for load and view default msg or data 
         //public string Index()
         //{
@@ -17,7 +22,9 @@ namespace BookStore.Properties.Controllers
 
         public ViewResult Index()
         {
-            ViewBag.Title = 123;  //view data 
+            Title = "Home Page From Controller";
+            CustomProperty = "Custom value"; 
+          
             return View();
         }
 
