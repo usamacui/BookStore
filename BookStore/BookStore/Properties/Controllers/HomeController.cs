@@ -17,6 +17,7 @@ namespace BookStore.Properties.Controllers
 
         public ViewResult Index()
         {
+            ViewBag.Title = 123;  //view data 
             return View();
         }
 
