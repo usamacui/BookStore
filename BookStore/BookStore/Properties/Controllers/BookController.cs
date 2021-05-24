@@ -43,7 +43,10 @@ namespace BookStore.Properties.Controllers
     public ViewResult GetBook(int id)
         {
 
-            var data =  _bookRepository.GetBookById(id);
+            dynamic data = new System.Dynamic.ExpandoObject();
+            data.book = _bookRepository.GetBookById(id);
+            data.Name = "Usama"; //dynamic data passing
+            //var data =  _bookRepository.GetBookById(id);
             return View(data);
         }
         //query for search books by id and Namehttps://localhost:44337/book/searchbooks?bookName=mvc&authorName=Usama

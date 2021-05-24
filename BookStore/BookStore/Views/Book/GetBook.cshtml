@@ -1,13 +1,13 @@
 ﻿@{
-    ViewData["Title"] = "Book Detail" +Model.Title;
+    ViewData["Title"] = "Book Detail" +Model.book.Title;
 }
 
 
-@model BookModel
+@*@model BookModel*@
 
 
 <div class="container">
-    <h3 class=" display-4">Book Detail</h3>
+    <h3 class=" display-4">Book Detail @Model.Name</h3>
     <div class="row">
         <div class="col-md-6">
 
@@ -47,21 +47,21 @@
         <div class="col-md-6">
             <div class=" row">
                 <div class="col-md-12">
-                    <h1> @Model.Title</h1>
+                    <h1> @Model.book.Title</h1>
                 </div>
             </div>
 
             <div class="row">
                 <div class="col-md-12 text-primary">
                     <span class="label label-primary">By: </span>
-                    <span class="monospaced">@Model.Author</span>
+                    <span class="monospaced">@Model.book.Author</span>
                 </div>
             </div>
 
             <div class="row">
                 <div class="col-md-12">
                     <p class="description">
-                        @Model.description
+                        @Model.book.description
                     </p>
                 </div>
             </div>
@@ -77,9 +77,9 @@
             <hr />
 
             <ul class="list-group">
-                <li class="list-group-item"><span class="font-weight-bold">Catogery -</span> @Model.Category</li>
-                <li class="list-group-item"><span class="font-weight-bold">CTotal Pages -</span> @Model.ToatalPages</li>
-                <li class="list-group-item"><span class="font-weight-bold">Language -</span> @Model.Language</li>
+                <li class="list-group-item"><span class="font-weight-bold">Catogery -</span> @Model.book.Category</li>
+                <li class="list-group-item"><span class="font-weight-bold">CTotal Pages -</span> @Model.book.ToatalPages</li>
+                <li class="list-group-item"><span class="font-weight-bold">Language -</span> @Model.book.Language</li>
             </ul>
 
         </div>
