@@ -55,19 +55,32 @@ namespace BookStore.Properties.Controllers
             return _bookRepository.SearchBook(bookName, authorName);
         }
 
+        public ViewResult AddNewBook()
+        {
 
-         
-   //public string GetALLBooks()
-   //     {
-   //         return "All Book";
-   //     }
+            return View();
+        }
+
+        [HttpPost]
+        public ViewResult AddNewBook(BookModel bookModel)
+        {
+
+            return View();
+        }
+
+
+
+        //public string GetALLBooks()
+        //     {
+        //         return "All Book";
+        //     }
 
         //public string GetBook(int id)
         //{
         //    return $"book with id = {id}";
         //}
-    
-      //  public string SearchBooks(string bookName, string authorName) //how pass parameter in controler action method herehttps://localhost:44337/book/searchbooks?bookName=Quran&authorName=ALLAH
+
+        //  public string SearchBooks(string bookName, string authorName) //how pass parameter in controler action method herehttps://localhost:44337/book/searchbooks?bookName=Quran&authorName=ALLAH
         //{
         //    return $"Book with name = {bookName} & authorName = { authorName}";
 
