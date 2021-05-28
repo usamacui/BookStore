@@ -61,7 +61,8 @@ namespace BookStore.Properties.Controllers
             return View();
         }
 
-        [HttpPost]
+         
+        [HttpPost] // use for handle post request
         public ViewResult AddNewBook(BookModel bookModel)
         {
 

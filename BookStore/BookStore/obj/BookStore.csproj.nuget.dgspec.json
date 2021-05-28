@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Usama Ahmad\\Desktop\\BookStore1\\26-May-2021\\BookStore\\BookStore\\BookStore\\BookStore.csproj": {}
+    "C:\\Users\\it2\\Desktop\\BookStore\\28-May-2021\\BookStore\\BookStore\\BookStore\\BookStore.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Usama Ahmad\\Desktop\\BookStore1\\26-May-2021\\BookStore\\BookStore\\BookStore\\BookStore.csproj": {
+    "C:\\Users\\it2\\Desktop\\BookStore\\28-May-2021\\BookStore\\BookStore\\BookStore\\BookStore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Usama Ahmad\\Desktop\\BookStore1\\26-May-2021\\BookStore\\BookStore\\BookStore\\BookStore.csproj",
+        "projectUniqueName": "C:\\Users\\it2\\Desktop\\BookStore\\28-May-2021\\BookStore\\BookStore\\BookStore\\BookStore.csproj",
         "projectName": "BookStore",
-        "projectPath": "C:\\Users\\Usama Ahmad\\Desktop\\BookStore1\\26-May-2021\\BookStore\\BookStore\\BookStore\\BookStore.csproj",
-        "packagesPath": "C:\\Users\\Usama Ahmad\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Usama Ahmad\\Desktop\\BookStore1\\26-May-2021\\BookStore\\BookStore\\BookStore\\obj\\",
+        "projectPath": "C:\\Users\\it2\\Desktop\\BookStore\\28-May-2021\\BookStore\\BookStore\\BookStore\\BookStore.csproj",
+        "packagesPath": "C:\\Users\\it2\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\it2\\Desktop\\BookStore\\28-May-2021\\BookStore\\BookStore\\BookStore\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Usama Ahmad\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\it2\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -41,6 +41,10 @@
           "targetAlias": "netcoreapp3.1",
           "dependencies": {
             "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": {
+              "target": "Package",
+              "version": "[3.1.14, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[3.1.14, )"
             },
